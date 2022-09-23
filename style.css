@@ -1,0 +1,26 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Lato, Helvetica, sans-serif;
+  background-image:linear-gradient(to right, #dc7b36, #e5d35b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #F1F1F1;
+    width:  90%;
+    padding: 10px;
+    border-radius: 10px;
+}
