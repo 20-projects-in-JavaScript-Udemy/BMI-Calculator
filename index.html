@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,30 +10,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <section class="container">
-        <div class="card">
-            <h1 class="card__title">BMI calculation</h1>
-            <form action="#" class="card__form">
-                <div class="card__form-height">
-                    <div class="card__form-text">Your height in centimeters (cm)</div>
-                    <input type="number" class="card__form-input-height">
-                </div>
-                <div class="card__form-weight">
-                    <div class="card__form-text">Your weight in kilogram (kg)</div>
-                    <input type="number" class="card__form-input-weight">
-                </div>
-                <input type="submit" value="Calculate your BMI">
-            </form>
-            <p class="card__result"></p>
-        </div>
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+</head>
 
+<body>
+    <section class="container">
+        <h1 class="container__title"><span>BMI</span> calculation</h1>
+        <form action="#" class="container__form">
+            <div class="container__inputs">
+                <div class="container__input-group">
+                    <label class="container__input-text">Your height in centimeters (cm)</label>
+                    <input type="number" class="container__input-field" placeholder="Your height in centimeters (cm)">
+                </div>
+                <div class="container__input-group">
+                    <label class="container__input-text">Your weight in kilogram (kg)</label>
+                    <input type="number" class="container__input-field" placeholder="Your weight in kilogram (kg)">
+                </div>
+            </div>
+            <button class="container__button">Calculate your BMI</button>
+        </form>
+        <div class="container__result">
+            <p class="container__result-value">0</p>
+            <p class="container__result-text">En attente du résultat...</p>
+        </div>
     </section>
-    
+
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>
